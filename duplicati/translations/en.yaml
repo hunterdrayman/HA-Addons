@@ -1,0 +1,4 @@
+configuration:
+  message:
+    name: Message
+    description: Duplicati off-site backup for HA

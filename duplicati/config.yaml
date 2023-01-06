@@ -1,0 +1,20 @@
+name: Duplicati
+version: "1.2.0"
+slug: duplicati
+description: >-
+  This is a local add-on which uses the Docker Hub duplicati image to carry out offsite backups
+  of HA containers & configs.
+arch:
+  - amd64
+url: "https://hub.docker.com/r/linuxserver/duplicati"
+ports:
+  8200/tcp: 8200
+host_network: true
+init: false
+map:
+  - config:rw
+  - addons:rw
+environment:
+  PUID: "0"
+  GUID: "0"
+  TZ: "Europe/London"
